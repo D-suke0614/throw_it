@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ asset('assets/css/products.css') }}">
   <title>Document</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
   <main>
     <div class="products">
       <div class="products_img">
-        <img src="" alt="products_img">
+        <img src="{{ asset('assets/img/example.jpg') }}" alt="products_img">
         <span>
           ¥12,000
         </span>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./assets/css/product.css">
+  <link rel="stylesheet" href="{{ asset('assets/css/product.css') }}">
   <title>Product</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
         <h2>商品名</h2>
       </div>
       <div class="product_img">
-        <img src="./assets/img/example.jpg" alt="product_img">
+        <img src="{{ asset('assets/img/example.jpg') }}" alt="product_img">
       </div>
       <div class="product_detail">
           <table border="1">
@@ -54,7 +54,7 @@
       </div>
       <div class="product_comment">
         <div class="comment_img">
-          <img src="./assets/img/example.jpg" alt="icon">
+          <img src="{{ asset('assets/img/example.jpg') }}" alt="icon">
         </div>
         <div class="comment_main">
           <div class="comment_name">Daisuke</div>
