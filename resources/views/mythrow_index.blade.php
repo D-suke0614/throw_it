@@ -18,11 +18,6 @@
         <div class="container">
         <h1>MyPage</h1>
     {{-- プロフィール？？ --}}
-
-    
-
-  
-
     {{-- いいね商品一覧 --}}
       <div class="throw_items">
         <?php foreach ($items as $item): ?>
