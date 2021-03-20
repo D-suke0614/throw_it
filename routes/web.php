@@ -16,9 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+
 Route::get('/myitems_index', function () {
     return view('myitems_index');
 });
 Route::get('/sell_item', function () {
     return view('sell_item');
 });
+
