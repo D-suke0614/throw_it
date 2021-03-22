@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header {
+  height: 10vh;
+  background-color: red;
+  margin-bottom: 70px;
+}
+
+/* main */
+.products {
+  margin: 0 auto;
+  width: 50vw;
+  border: 1px solid black;
+  margin-bottom: 100px;
+}
+
+.products_img {
+  width: 100%;
+}
+
+.products_img > img {
+  width: 100%;
+}
+
+.products_img > span {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  /* background-color: rgba(128, 128, 128, 10%); */
+}
+
+.products_name {
+  padding: 10px;
+  font-size: 35px;
+}
