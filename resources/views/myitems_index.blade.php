@@ -15,25 +15,16 @@
     </header>
     <main>
         <div class="container">
-        <h1 class="mypage_top ">MyPage</h1>
-    {{-- プロフィール？？ --}}
-         <section >  
-             {{-- class="mypage_user_icon" --}}
-            <div class="prf_icn">
-                <img class="prf" src="{{asset('asset/img/monster.jpg')}}" alt="">
-            
-            <ul>
-                <li>評価</li>
-                <li>残高</li>
-            </ul>
+                <h1 class="mypage_top ">MyPage</h1>
+            <section >  
+                <div class="prf_icn">
+                  <img class="prf" src="{{asset('asset/img/monster.jpg')}}" alt="">
+                    <div>ニックネーム</div>
+                    <ul>
+                        <li>評価</li>
+                        <li>残高</li>
+                    </ul>
         </div> 
-    {{-- <div class="container"><img src="<?php echo $profile->photo ?>" alt="">
-          <?php echo プロフィール->nickname; ?> --}}
-    {{-- <ul>
-        <li class="r_p">評価<?php echo $profile->rating; ?></li>
-        <li class="r_p">残高<?php echo $balance->balance ?></li>
-    </ul> --}}
-    
     </section>
  
     <input id="throw" type="radio" name="tab_item" checked>
@@ -44,28 +35,16 @@
     <div class="tab_content" id="throw_content">
         <div class="tab_content_description">
           <p class="c-txtsp">throwした商品がここに入ります</p>
-
         </div>
-      </div>
-      <div class="tab_content" id="sell_items_content">
+    </div>
+    <div class="tab_content" id="sell_items_content">
         <div class="tab_content_description">
           <p class="c-txtsp">出品している商品がここに入ります</p>
         </div>
-      </div>
+    </div>
    
     </div>
-    {{-- 出品商品一覧 --}}
-        <div class="product_items">
-        
-          {{-- <?php foreach ($items as $item): ?> --}}
-            <div class="product_item"> 
-            {{-- <img src=" echo 商品個別ページ写真？ " alt="カテゴリー"> --}}
-            {{-- <div class="items_name"><?php echo 商品個別ページ カテゴリ?></div> --}}
-            {{-- <div class="price"><?php echo 商品個別ページ price ?></div> --}}
-            </div>
-        {{-- <?php endforeach ?> --}}
-        </div>
-        </div></div>
+
     </main>
 </body>
 </html>
