@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/category', function () {
+    return view('product.category');
+});
+
+Route::get('/product', function () {
+    return view('product.product');
+});
+
+Route::get('/products', function () {
+    return view('product.products');
+});
+
 Route::get('/login', function () {
     return view('login');
 });
@@ -24,7 +36,6 @@ Route::get('/login', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
-
 
 Route::get('/myitems_index', function () {
     return view('myitems_index');
