@@ -1,15 +1,15 @@
-*{margin: 0; padding: 0;}
+*{
+  margin: 0; padding: 0;
+}
 
 section{
     background-color: rgb(228, 126, 194) ;
 }
-
 .prf{
     margin: 15px;
     width: 50px;
     height: 50px;
     border-radius: 40%;
-    
 }
 .prf_icn{
     text-align: center;
@@ -20,19 +20,15 @@ section{
     color: #4ac0b9;
     text-align: center;
     padding: 20px 0;
-    /* margin: 80px 0 30px; */
-    /* border-top: 5px solid #42c7c1;
-    border-bottom: 5px solid #42c7c1; */
-  }
+}
 .mypage_user_icon{
     position: relative;
     height: 155px;
     padding: 20px;
-    background: 
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-  }
+}
 /*タブ切り替え全体のスタイル*/
 .tabs {
     margin-top: 50px;
@@ -40,10 +36,10 @@ section{
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 700px;
-    margin: 0 auto;}
-  
+    margin: 0 auto;
+}
   /*タブのスタイル*/
-  .tab_item {
+.tab_item {
     width: calc(100%/2);
     height: 50px;
     border-bottom: 3px solid #5ab4bd;
@@ -58,92 +54,74 @@ section{
     font-weight: bold;
     transition: all 0.2s ease;
   }
-  .tab_item:hover {
+.tab_item:hover {
     opacity: 0.75;
   }
-  
   /*ラジオボタンを全て消す*/
-  input[name="tab_item"] {
+input[name="tab_item"] {
     display: none;
-  }
-  
+}
   /*タブ切り替えの中身のスタイル*/
-  .tab_content {
+.tab_content {
     display: none;
     padding: 40px 40px 0;
     clear: both;
     overflow: hidden;
   }
-  
-  
   /*選択されているタブのコンテンツのみを表示*/
-  #throw:checked ~ #throw_content,
-  #sell_items:checked ~ #sell_items_content
-   {
+#throw:checked ~ #throw_content,
+#sell_items:checked ~ #sell_items_content{
     display: block;
-  }
-  
+}
   /*選択されているタブのスタイルを変える*/
-  .tabs input:checked + .tab_item {
+.tabs input:checked + .tab_item {
     background-color: #5ab4bd;
     color: #fff;
-  }
-  
-.tab ul {
-	text-align: center;
-	margin-left: -10px;
-	/* letter-spacing: -.4em; タグ改行時の空白防止 */
 }
-
+.tab ul {
+    text-align: center;
+    margin-left: -10px;
+    /* letter-spacing: -.4em; タグ改行時の空白防止 */
+}
 .tab ul li{
-    width: 240px;
-	display: inline-block;
-	margin-left: 10px;
-	/* letter-spacing: normal; 元に戻す */
-} 
-
+      width: 240px;
+    display: inline-block;
+    margin-left: 10px;
+	  /* letter-spacing: normal; 元に戻す */
+  } 
 li{
-    
     list-style: none;
     display: inline-block;
 }
-
 .product-items {
     margin-bottom: 60px;
-  }
-  
+}
 .product-item {
     display: inline-block;
     width: 40%;
     padding: 20px;
     margin-top: 40px;
-  }
+}
 .logo_header{
-      height:60px;
-      background-color: yellow;
-
-  }
+    height:60px;
+    background-color: yellow;
+    }
 .logo{
     font-size: 25px;
     padding: 10px 40px;
-
-  }
-
+}
 .container{
-      width:660px;
-      margin: 0 auto;
-      background-color :#e9e9e3;
-  }  
-
-  
+    width:660px;
+    margin: 0 auto;
+    background-color :#e9e9e3;
+}  
 .selectbox{
-      width: 90%;
-      margin:1em auto;
+    width: 90%;
+    margin:1em auto;
   }
-  
 select ,.style_textarea {
     -webkit-appearance:none;
-      appearance:none;
+    appearance:none;
     width:100%;
     padding:1em 1em;
     box-sizing:border-box;
@@ -152,9 +130,9 @@ select ,.style_textarea {
     border-radius:0;
     background:#fff;
   }
-  .item_price{
-    -webkit-appearance:none;
-    appearance:none;
+.item_price{
+  -webkit-appearance:none;
+  appearance:none;
   width:50%;
   padding:1em 1em;
   box-sizing:border-box;
@@ -187,4 +165,18 @@ select ,.style_textarea {
     border-radius: .25rem;
     
 }
-.btn{align-items: center;}
+.btn{
+    align-items: center;
+}
+.card-body{
+  width: 14vw;
+  height: 90%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-image: initial;
+}
+.item_cards{
+  display: flex;
+
+}

@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/myitems_index','ProductController@index') ;
+// Route::get('/products/create','ProductContoroller@create')->name('products.create');
+
+Route::resource('products','ProductController');
+// Route::get('/products','ProductContoroller@index')->name('product.index') ;
+
 Route::get('/category', function () {
     return view('product.category');
 });
@@ -52,3 +58,4 @@ Route::get('/sell_item', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
