@@ -32,14 +32,26 @@
     <input id="sell_items" type="radio" name="tab_item">
     <label class="tab_item" for="sell_items">出品している商品</label>
 
+    {{-- throwした商品一覧 --}}
     <div class="tab_content" id="throw_content">
         <div class="tab_content_description">
-          <p class="c-txtsp">throwした商品がここに入ります</p>
+         <p class="c-txtsp">throwした商品がここに入ります</p>
         </div>
     </div>
+    {{-- 出品している商品一覧 --}}
     <div class="tab_content" id="sell_items_content">
         <div class="tab_content_description">
-          <p class="c-txtsp">出品している商品がここに入ります</p>
+            <div class="item_cards">
+        @foreach ($products as $product)
+            <div class="card-body">
+                <div class="card-image"> {{ $product->image }}</div>
+                <p class="card-text">
+                    商品説明 : {{ $product->description }}
+                </p>
+                <p class="card-text">値段：{{ $product->price }}円</p>
+            </div>
+        @endforeach
+        </div>
         </div>
     </div>
    

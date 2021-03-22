@@ -16,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/myitems_index', function () {
-    return view('myitems_index');
-});
-Route::get('/sell_item', function () {
-    return view('sell_item');
-});
+// Route::get('/myitems_index', function () {
+//     return view('myitems_index');
+// });
+Route::get('/myitems_index','ProductController@index') ;
+// Route::get('/products/create','ProductContoroller@create')->name('products.create');
+
+Route::resource('products','ProductController');
+// Route::get('/products','ProductContoroller@index')->name('product.index') ;

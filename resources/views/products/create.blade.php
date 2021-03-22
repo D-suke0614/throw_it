@@ -15,6 +15,8 @@
     </header>
     <main>
       <div class="container">
+        <form action="{{ route('products.store') }}" method="POST">
+          @csrf 
         <div class="style_form item_photo" >出品画像</div>
             <div class="photo_space"> 
               <br>
@@ -45,13 +47,13 @@
         </div>
         <div class="style_form">販売価格</div>
         <div class="selectbox">
-            <input class="item_price" type="number" name="price" placeholder="0" value=""  >
+            <input class="item_price" type="number" name="price" placeholder="0"  >
             <span>円</span>
         </div>    
         <div class="style_form">
-          <button class="btn-primary" type="submit">出品する</button>
-
+          <button class="btn-primary" type="submit" onclick="location.href='../myitems_index'">出品する</button>
         </div>
+      </form>
       </div>  
     </main>
 </body>
