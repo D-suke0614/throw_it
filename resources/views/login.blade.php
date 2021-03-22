@@ -8,6 +8,9 @@
 </head>
 <body>
   <header>
+    <div class="header-left">
+      <h1>throw_it</h1>
+    </div>
     <div class="header-right">
       <div class="sample1">
         <button class="button1" type="submit">新規会員登録</button>
@@ -23,5 +26,4 @@
   <footer></footer>
 </body>
 </html>
-
 

@@ -21,6 +21,10 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/login2', function () {
+    return view('login2');
+});
+
 Route::get('/profile', function () {
     return view('profile');
 });
@@ -33,3 +37,7 @@ Route::get('/sell_item', function () {
     return view('sell_item');
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
