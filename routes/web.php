@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/category', function () {
-    return view('product.category');
-});
+// Route::get('/category', function () {
+//     return view('product.category');
+// });
 
 Route::get('/product', function () {
     return view('product.product');
@@ -44,3 +44,7 @@ Route::get('/sell_item', function () {
     return view('sell_item');
 });
 
+// Route::resource('categories', 'CategoryController');
+Route::get('/categories', 'CategoryController@index')->name('categories.index');
+
+// Route::get('/categories', 'ProductController@index')->name('products.index');
