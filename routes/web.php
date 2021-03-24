@@ -17,9 +17,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 // Route::get('/category', function () {
 //     return view('product.category');
 // });
+
+Route::get('/myitems_index','ProductController@index') ;
+// Route::get('/products/create','ProductContoroller@create')->name('products.create');
+
+Route::resource('products','ProductController');
+// Route::get('/products','ProductContoroller@index')->name('product.index') ;
+
+
+
 
 Route::get('/product', function () {
     return view('product.product');
@@ -33,6 +43,10 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/login2', function () {
+    return view('login2');
+});
+
 Route::get('/profile', function () {
     return view('profile');
 });
@@ -44,7 +58,9 @@ Route::get('/sell_item', function () {
     return view('sell_item');
 });
 
-// Route::resource('categories', 'CategoryController');
 Route::get('/categories', 'CategoryController@index')->name('categories.index');
 
-// Route::get('/categories', 'ProductController@index')->name('products.index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
