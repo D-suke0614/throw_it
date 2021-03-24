@@ -12,13 +12,14 @@ class ProductController extends Controller
     {
         return view('products.create');
     }
+
     public function index()
     {
         $products = Product::all();
         // dd($products);
         return view('myitems_index',['products'=>$products]);
-        
     }
+
     public function store(Request $request)
     {
         $product = new Product;
@@ -33,6 +34,7 @@ class ProductController extends Controller
         return redirect()->route('products.index');
 
     }
+
     public function show($id)
    {   //送られてきたidでDB検索、該当のデータを抽出
             $product = Product::find($id);
