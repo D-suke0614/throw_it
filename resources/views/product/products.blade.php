@@ -16,7 +16,7 @@
 
   <main>
     @foreach($products as $product)
-    <a href="#" class="products_link">
+    <a href="{{ route('products.show', $product->id) }}" class="products_link">
       <div class="products">
         <div class="products_img">
           <img src="{{ $product->image }}" alt="products_img">

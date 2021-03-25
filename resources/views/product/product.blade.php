@@ -16,38 +16,38 @@
   <main>
     <div class="product">
       <div class="product_name">
-        <h2>商品名</h2>
+        <h2>{{ $product->name }}</h2>
       </div>
       <div class="product_img">
-        <img src="{{ asset('assets/img/example.jpg') }}" alt="product_img">
+        <img src="{{ $product->image }}" alt="product_img">
       </div>
       <div class="product_detail">
           <table border="1">
             <tr align="left">
               <th class="detail detail_category">出品者</th>
-              <th class="detail">name</th>
+              <th class="detail">DBの設計忘れてました！！！</th>
             </tr>
             <tr align="left">
               <th class="detail detail_category">カテゴリー</th>
-              <th class="detail">category</th>
+              <th class="detail">{{ $product->category_id }}</th>
             </tr>
             <tr align="left">
               <th class="detail detail_category">サイズ</th>
-              <th class="detail">size</th>
+              <th class="detail"></th>
             </tr>
             <tr align="left">
               <th class="detail detail_category">商品の状態</th>
-              <th class="detail">state</th>
+              <th class="detail"></th>
             </tr>
           </table>
       </div>
       <div class="product_description">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed suscipit quas harum earum repudiandae tempore, placeat dignissimos animi unde, provident aut laborum ea delectus alias autem, dolor amet! Iusto, earum.
+          {{ $product->description }}
         </p>
       </div>
       <div class="product_buy">
-        <h2>¥12,000</h2>
+        <h2>¥{{ $product->price }}</h2>
         <div class="buy_btn">
           <a href="#">購入に進む</a>
         </div>
