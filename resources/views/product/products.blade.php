@@ -13,20 +13,25 @@
       <h1>Throw it</h1>
     </div>
   </header>
+
   <main>
-    <div class="products">
-      <div class="products_img">
-        <img src="{{ asset('assets/img/example.jpg') }}" alt="products_img">
-        <span>
-          ¥12,000
-        </span>
+    @foreach($products as $product)
+    <a href="#" class="products_link">
+      <div class="products">
+        <div class="products_img">
+          <img src="{{ $product->image }}" alt="products_img">
+          <span>
+            ¥{{ $product->price }}
+          </span>
+        </div>
+        <div class="products_name">
+          <h2>
+            {{ $product->name }}
+          </h2>
+        </div>
       </div>
-      <div class="products_name">
-        <h2>
-          商品名
-        </h2>
-      </div>
-    </div>
+    </a>
+    @endforeach
   </main>
   <footer>
 
