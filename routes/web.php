@@ -23,16 +23,8 @@ Route::get('/myitems_index','ProductController@index') ;
 Route::resource('products','ProductController');
 // Route::get('/products','ProductContoroller@index')->name('product.index') ;
 
-Route::get('/category', function () {
-    return view('product.category');
-});
-
 Route::get('/product', function () {
     return view('product.product');
-});
-
-Route::get('/products', function () {
-    return view('product.products');
 });
 
 Route::get('/login', function () {
@@ -55,7 +47,12 @@ Route::get('/sell_item', function () {
 });
 
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/products', 'ProductIndexController@index')->name('products.index');
+
+// Route::get('/products', function () {
+//     return view('product.products');
+// });
