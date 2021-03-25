@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Product;
 
 
@@ -28,11 +29,9 @@ class ProductController extends Controller
         $product -> image = $request->image;
         $product -> price = $request->price;
         $product -> description = $request->description;
-
         $product->save();
         //リダイレクト処理
         return redirect()->route('products.index');
-
     }
 
     public function show($id)
