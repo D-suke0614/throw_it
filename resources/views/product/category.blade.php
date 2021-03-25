@@ -16,49 +16,30 @@
   <main>
     {{-- １つのカテゴリ --}}
     <div class="categorys">
+      @foreach ($categories as $category)
       <div class="category">
         <div class="category_header">
-            <h1>カテゴリ名</h1>
-            <a href="#" class="show_more">Show more ></a>
+            <h1>{{ $category->name }}</h1>
+            {{-- <a href="{{ route('products.index') }}" class="show_more">Show more ></a> --}}
+            <a href="{{ route('products.index', $category->id) }}" class="show_more">Show more ></a>
         </div>
+        <div class="category_border"></div>
         {{-- カテゴリ内の商品をいくつか表示 --}}
         <div class="category_main">
-          <a href="#" class="test">
+          <a href="#" class="product">
             <div class="category_items">
               <div class="category_img">
-                <img src="" alt="">
+                <img src="" alt="products_img">
               </div>
               <div class="category_text">
-                <p>商品説明</p>
-                <span>値段</span>
+                <p>商品名orDescription</p>
+                <span>¥1000</span>
               </div>
             </div>
           </a>
         </div>
       </div>
-
-
-      <div class="category">
-        <div class="category_header">
-            <h1>カテゴリ名</h1>
-            <a href="#" class="show_more">Show more ></a>
-        </div>
-        {{-- カテゴリ内の商品をいくつか表示 --}}
-        <div class="category_main">
-          <a href="#" class="test">
-            <div class="category_items">
-              <div class="category_img">
-                <img src="" alt="">
-              </div>
-              <div class="category_text">
-                <p>商品説明</p>
-                <span>値段</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
+      @endforeach
 
     </div>
   </main>
