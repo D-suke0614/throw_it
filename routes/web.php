@@ -54,8 +54,12 @@ Route::get('/categories', 'CategoryController@index')->name('categories.index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+ topage_it3
+Route::resource('profile', 'ProfileController'); 
+
 // 商品一覧を表示させる
 Route::get('/products', 'ProductIndexController@index')->name('products.index');
 
 // 商品個別ページを表示
 Route::get('/products/{product}', 'ProductShowController@show')->name('products.show');
+ master
