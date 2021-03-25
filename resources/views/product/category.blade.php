@@ -20,24 +20,23 @@
       <div class="category">
         <div class="category_header">
             <h1>{{ $category->name }}</h1>
-            <a href="#" class="show_more">Show more ></a>
+            {{-- <a href="{{ route('products.index') }}" class="show_more">Show more ></a> --}}
+            <a href="{{ route('products.index', $category->id) }}" class="show_more">Show more ></a>
         </div>
         <div class="category_border"></div>
         {{-- カテゴリ内の商品をいくつか表示 --}}
         <div class="category_main">
-          {{-- @for ($i = 0; $i < 5; $i++) --}}
           <a href="#" class="product">
             <div class="category_items">
               <div class="category_img">
-                {{-- <img src="{{ $product->image }}" alt="products_img"> --}}
+                <img src="" alt="products_img">
               </div>
               <div class="category_text">
-                {{-- <p>{{ $product->description }}</p> --}}
-                {{-- <span>{{ $product->price }}</span> --}}
+                <p>商品名orDescription</p>
+                <span>¥1000</span>
               </div>
             </div>
           </a>
-          {{-- @endfor --}}
         </div>
       </div>
       @endforeach

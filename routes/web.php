@@ -28,10 +28,6 @@ Route::get('/myitems_index','ProductController@index') ;
 Route::resource('products','ProductController');
 // Route::get('/products','ProductContoroller@index')->name('product.index') ;
 
-uct', function () {
-    return view('product.product');
-});
-
 Route::get('/login', function () {
     return view('login');
 });
@@ -51,14 +47,15 @@ Route::get('/sell_item', function () {
     return view('sell_item');
 });
 
+// カテゴリー一覧表示させる
 Route::get('/categories', 'CategoryController@index')->name('categories.index');
 
 // Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// 商品一覧を表示させる
 Route::get('/products', 'ProductIndexController@index')->name('products.index');
 
-// Route::get('/products', function () {
-//     return view('product.products');
-// });
+// 商品個別ページを表示
+Route::get('/products/{product}', 'ProductShowController@show')->name('products.show');
