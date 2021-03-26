@@ -8,17 +8,25 @@
     <link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
 </head>
 <body>
-    <header class="logo_header">
-        <div class="logo">
-        throw_it
-        </div>
-    </header>
+  <header class="logo_header">
+    <h1 class="throw_it">
+    throw_it
+    </h1>
+    <div class="header_links">
+        <a href="{{ route('categories.index') }}" class="header_link">
+            カテゴリー一覧 >
+        </a>
+        <a href="{{ route('products.myitems') }}" class="header_link">
+            マイページ >
+        </a>
+    </div>
+</header>
     <main>
       <div class="container">
         <form action="{{ route('products.store') }}" method="POST">
-          @csrf 
+          @csrf
         <div class="style_form item_photo" >出品画像</div>
-            <div class="photo_space"> 
+            <div class="photo_space">
               <br>
               <img src="{{asset('asset/img/baseline_add_a_photo_black_18dp.png')}}" alt="">
               <br>
@@ -26,7 +34,7 @@
 
             </div>
             <form action="#">
-              
+
               <p><input type="file" name="s_file"></p>
               </form>
 
@@ -49,12 +57,12 @@
         <div class="selectbox">
             <input class="item_price" type="number" name="price" placeholder="0"  >
             <span>円</span>
-        </div>    
+        </div>
         <div class="style_form">
           <button class="btn-primary" type="submit" onclick="location.href='../myitems_index'">出品する</button>
         </div>
       </form>
-      </div>  
+      </div>
     </main>
 </body>
 </html>
