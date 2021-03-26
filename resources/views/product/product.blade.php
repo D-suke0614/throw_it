@@ -33,11 +33,11 @@
             </tr>
             <tr align="left">
               <th class="detail detail_category">サイズ</th>
-              <th class="detail"></th>
+              <th class="detail">DBの設計</th>
             </tr>
             <tr align="left">
               <th class="detail detail_category">商品の状態</th>
-              <th class="detail"></th>
+              <th class="detail">忘れてました。。。🥺</th>
             </tr>
           </table>
       </div>

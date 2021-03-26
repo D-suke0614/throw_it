@@ -16,7 +16,7 @@
     <main>
         <div class="container">
                 <h1 class="mypage_top ">MyPage</h1>
-            <section >  
+            <section >
                 <div class="prf_icn">
                   <img class="prf" src="{{asset('asset/img/monster.jpg')}}" alt="">
                     <div>ニックネーム</div>
@@ -24,9 +24,9 @@
                         <li>評価</li>
                         <li>残高</li>
                     </ul>
-        </div> 
+        </div>
     </section>
- 
+
     <input id="throw" type="radio" name="tab_item" checked>
     <label class="tab_item" for="throw">throwした商品</label>
     <input id="sell_items" type="radio" name="tab_item">
@@ -54,7 +54,7 @@
         </div>
         </div>
     </div>
-   
+
     </div>
 
     </main>

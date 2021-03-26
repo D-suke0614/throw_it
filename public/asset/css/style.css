@@ -88,7 +88,7 @@ input[name="tab_item"] {
     display: inline-block;
     margin-left: 10px;
 	  /* letter-spacing: normal; 元に戻す */
-  } 
+  }
 li{
     list-style: none;
     display: inline-block;
@@ -114,7 +114,7 @@ li{
     width:660px;
     margin: 0 auto;
     background-color :#e9e9e3;
-}  
+}
 .selectbox{
     width: 90%;
     margin:1em auto;
@@ -163,7 +163,7 @@ select ,.style_textarea {
     padding: .375rem .75rem;
     font-size: 1rem;
     border-radius: .25rem;
-    
+
 }
 .btn{
     align-items: center;
@@ -179,4 +179,10 @@ select ,.style_textarea {
 .item_cards{
   display: flex;
 
+}
+
+
+/* ヘッダーのリンク */
+.switch {
+  
 }

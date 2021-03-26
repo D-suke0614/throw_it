@@ -40,9 +40,10 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
-Route::get('/myitems_index', function () {
-    return view('myitems_index');
-});
+// Route::get('/myitems_index', function () {
+//     return view('myitems_index');
+// });
+
 Route::get('/sell_item', function () {
     return view('sell_item');
 });
@@ -50,16 +51,14 @@ Route::get('/sell_item', function () {
 // カテゴリー一覧表示させる
 Route::get('/categories', 'CategoryController@index')->name('categories.index');
 
-// Auth::routes();
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
- topage_it3
-Route::resource('profile', 'ProfileController'); 
+Route::resource('profile', 'ProfileController');
 
 // 商品一覧を表示させる
 Route::get('/products', 'ProductIndexController@index')->name('products.index');
 
 // 商品個別ページを表示
 Route::get('/products/{product}', 'ProductShowController@show')->name('products.show');
- master
