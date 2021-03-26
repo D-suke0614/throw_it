@@ -9,8 +9,16 @@
 </head>
 <body>
     <header class="logo_header">
-        <div class="logo">
+        <h1 class="throw_it">
         throw_it
+        </h1>
+        <div class="header_links">
+            <a href="{{ route('categories.index') }}" class="header_link">
+                カテゴリー一覧 >
+            </a>
+            <a href="{{ route('products.create') }}" class="header_link">
+                商品を出品する >
+            </a>
         </div>
     </header>
     <main>
