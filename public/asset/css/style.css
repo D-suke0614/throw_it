@@ -3,7 +3,7 @@
 }
 
 /* header */
-.logo_header{
+.header{
   height:10vh;
   background-color: red;
   color: white;
@@ -12,7 +12,7 @@
   align-items: center;
   }
 
-  .throw_it {
+.throw_it {
     margin-left: 100px;
     font-size: 50px;
   }

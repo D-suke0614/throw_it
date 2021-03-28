@@ -8,9 +8,20 @@
   <title>Product</title>
 </head>
 <body>
-  <header>
-    <div class="header">
-      <h1>Throw it</h1>
+  <header class="header">
+    <h1 class="throw_it">
+      throw_it
+    </h1>
+    <div class="header_links">
+      <a href="{{ route('categories.index') }}" class="header_link">
+        カテゴリー一覧 >
+      </a>
+      <a href="{{ route('products.myitems') }}" class="header_link">
+        マイページ >
+      </a>
+      <a href="{{ route('products.create') }}" class="header_link">
+        商品を出品する >
+      </a>
     </div>
   </header>
   <main>
