@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
 </head>
 <body>
-    <header class="logo_header">
+    <header class="header">
         <h1 class="throw_it">
         throw_it
         </h1>

@@ -4,10 +4,30 @@
 }
 
 /* header */
-header {
-  height: 10vh;
+.header{
+  height:10vh;
   background-color: red;
-  margin-bottom: 70px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+  }
+
+.throw_it {
+    margin-left: 100px;
+    font-size: 50px;
+  }
+
+.header_link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.header_link:hover {
+  text-decoration: underline;
 }
 
 /* main */
