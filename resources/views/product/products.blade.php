@@ -45,7 +45,11 @@
     @endforeach
   </main>
   <footer>
-
+    <div class="footer">
+      <p class="footer_text">
+        © 2021 - Throw it All Rights Reserved.
+      </p>
+    </div>
   </footer>
 </body>
 </html>

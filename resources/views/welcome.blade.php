@@ -48,7 +48,7 @@
             }
 
             .title {
-                font-size: 70px;
+                font-size: 100px;
                 height: 100%;
             }
 
@@ -65,7 +65,6 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-            
         </style>
     </head>
     <body>
@@ -93,5 +92,13 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div class="footer">
+              <p class="footer_text">
+                © 2021 - Throw it All Rights Reserved.
+              </p>
+            </div>
+        </footer>
     </body>
 </html>
