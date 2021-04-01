@@ -34,17 +34,19 @@
         <div class="category_border"></div>
         {{-- カテゴリ内の商品をいくつか表示 --}}
         <div class="category_main">
+          @foreach ($products as $product)
           <a href="#" class="product">
             <div class="category_items">
               <div class="category_img">
                 <img src="" alt="products_img">
               </div>
               <div class="category_text">
-                <p>商品名orDescription</p>
+                <p>{{ $product->name }}</p>
                 <span>¥1000</span>
               </div>
             </div>
           </a>
+          @endforeach
         </div>
       </div>
       @endforeach
@@ -52,7 +54,11 @@
     </div>
   </main>
   <footer>
-
+    <div class="footer">
+      <p class="footer_text">
+        © 2021 - Throw it All Rights Reserved.
+      </p>
+    </div>
   </footer>
 </body>
 </html>
