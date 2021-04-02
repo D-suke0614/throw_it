@@ -12,7 +12,8 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
-        $products = Product::all();
+        $products = Product::orderBy('category_id', 'asc')->get();
+        // dd($products);
         return view('product.category', ['categories' => $categories], ['products' => $products]);
     }
 }
