@@ -18,23 +18,23 @@
         <form action="{{ route('products.store') }}" method="POST">
           @csrf 
         <div class="style_form item_photo" >出品画像</div>
-            <div class="photo_space"> 
-              <br>
-              <img src="{{asset('asset/img/baseline_add_a_photo_black_18dp.png')}}" alt="">
-              <br>
-              <p>アップロードするファイルを選択して下さい。</p>
-
-            </div>
-            <form action="#">
-              
-              <p><input type="file" name="s_file"></p>
-              </form>
+        <div id="upFileWrap">
+          <div id="inputFile">
+              <!-- ドラッグ&ドロップエリア -->
+              <p id="dropArea">ここにファイルをドロップしてください<br>または</p>
+              <div id="inputFileWrap">
+                  <input type="file" name="uploadFile" id="uploadFile" accept="image/*">
+                  <div id="btnInputFile"><span>ファイルを選択する</span></div>
+                  <div id="btnChangeFile"><span>ファイルを変更する</span></div>
+              </div>
+          </div>
+      </div>
 
         <div class="style_form item_category">カテゴリー</div>
           <div class="selectbox">
             <select name="カテゴリー" >
-                <option value="ladies">選択してください</option>
-                <option value="ladies">レディ―ス</option>
+                <option value="categories">選択してください</option>
+                <option value="item"></option>
                 <option value="ladies">メンズ</option>
                 <option value="ladies">その他</option>
             </select>

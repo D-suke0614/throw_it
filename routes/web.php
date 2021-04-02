@@ -47,9 +47,6 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
-Route::get('/myitems_index', function () {
-    return view('myitems_index');
-});
 Route::get('/sell_item', function () {
     return view('sell_item');
 });
