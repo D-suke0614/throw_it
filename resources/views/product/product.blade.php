@@ -36,11 +36,11 @@
           <table border="1">
             <tr align="left">
               <th class="detail detail_category">出品者</th>
-              <th class="detail">DBの設計忘れてました！！！</th>
+              <th class="detail">{{ $product->profile->nickname }}</th>
             </tr>
             <tr align="left">
               <th class="detail detail_category">カテゴリー</th>
-              <th class="detail">{{ $product->category_id }}</th>
+              <th class="detail">{{ $product->category->name }}</th>
             </tr>
             <tr align="left">
               <th class="detail detail_category">サイズ</th>

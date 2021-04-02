@@ -15,4 +15,9 @@ class Product extends Model
     {
         return $this->belongsTo('App\Category');
     }
+
+    public function profile()
+    {
+        return $this->belongsTo('App\Profile');
+    }
 }
