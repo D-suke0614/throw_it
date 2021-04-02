@@ -17,23 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/myitems_index','ProductController@index') ;
+
+// Route::get('/category', function () {
+//     return view('product.category');
+// });
+
+Route::get('/myitems_index','ProductController@index')->name('products.myitems');
 // Route::get('/products/create','ProductContoroller@create')->name('products.create');
 
 Route::resource('products','ProductController');
 // Route::get('/products','ProductContoroller@index')->name('product.index') ;
-
-Route::get('/category', function () {
-    return view('product.category');
-});
-
-Route::get('/product', function () {
-    return view('product.product');
-});
-
-Route::get('/products', function () {
-    return view('product.products');
-});
 
 Route::get('/login', function () {
     return view('login');
@@ -47,12 +40,23 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
+
 Route::get('/sell_item', function () {
     return view('sell_item');
 });
 
-
+// Auth機能
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('profile', 'ProfileController');
+
+// カテゴリー一覧表示させる
+Route::get('/categories', 'CategoryController@index')->name('categories.index');
+
+// 商品一覧を表示させる
+Route::get('/products', 'ProductIndexController@index')->name('products.index');
+
+// 商品個別ページを表示
+Route::get('/products/{product}', 'ProductShowController@show')->name('products.show');

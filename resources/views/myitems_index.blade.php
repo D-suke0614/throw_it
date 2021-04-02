@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
 </head>
 <body>
-    <header class="logo_header">
-        <div class="logo">
+    <header class="header">
+        <h1 class="throw_it">
         throw_it
+        </h1>
+        <div class="header_links">
+            <a href="{{ route('categories.index') }}" class="header_link">
+                カテゴリー一覧 >
+            </a>
+            <a href="{{ route('products.create') }}" class="header_link">
+                商品を出品する >
+            </a>
         </div>
     </header>
     <main>
         <div class="container">
                 <h1 class="mypage_top ">MyPage</h1>
-            <section >  
+            <section >
                 <div class="prf_icn">
                   <img class="prf" src="{{asset('asset/img/monster.jpg')}}" alt="">
                     <div>ニックネーム</div>
@@ -24,9 +32,9 @@
                         <li>評価</li>
                         <li>残高</li>
                     </ul>
-        </div> 
+        </div>
     </section>
- 
+
     <input id="throw" type="radio" name="tab_item" checked>
     <label class="tab_item" for="throw">throwした商品</label>
     <input id="sell_items" type="radio" name="tab_item">
@@ -54,9 +62,17 @@
         </div>
         </div>
     </div>
-   
+
     </div>
 
     </main>
+
+    <footer>
+        <div class="footer">
+          <p class="footer_text">
+            © 2021 - Throw it All Rights Reserved.
+          </p>
+        </div>
+      </footer>
 </body>
 </html>
