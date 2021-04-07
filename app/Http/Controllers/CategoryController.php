@@ -13,6 +13,7 @@ class CategoryController extends Controller
     {
         $categories = Category::all();
         $products = Product::orderBy('category_id', 'asc')->get();
+        // $products = Product::all();
         // dd($products);
         return view('product.category', ['categories' => $categories], ['products' => $products]);
     }
