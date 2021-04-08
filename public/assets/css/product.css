@@ -148,6 +148,11 @@
   background-color: rgba(192, 192, 192, 30%)
 }
 
+.comment_date {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
 .footer {
   height: 15vh;
   width: 85vw;

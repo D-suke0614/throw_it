@@ -12,6 +12,11 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 100px;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; */
   }
 
 .throw_it {
@@ -98,11 +103,12 @@
 
 .category_text {
   height: 30%;
+  padding: 7px;
   /* background-color: greenyellow; */
 }
 
 .product {
-  height: 100%;
+  height: 90%;
   text-decoration: none;
   color: black;
 }

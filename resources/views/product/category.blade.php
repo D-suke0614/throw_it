@@ -34,18 +34,24 @@
         <div class="category_border"></div>
         {{-- カテゴリ内の商品をいくつか表示 --}}
         <div class="category_main">
-          @foreach ($products as $product)
-          <a href="#" class="product">
-            <div class="category_items">
+          @foreach($products as $product)
+          @if ($product->category_id==$category->id)
+          {{-- @for ($i=0;$i<4;$i++) --}}
+          <div class="category_items">
+            <a href="{{ route('products.show', $product->id) }}" class="product">
               <div class="category_img">
-                <img src="" alt="products_img">
+                <img src="#" alt="products_img">
               </div>
               <div class="category_text">
                 <p>{{ $product->name }}</p>
-                <span>¥1000</span>
+                <span>¥{{ $product->price }}</span>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
+
+
+          {{-- @endfor --}}
+          @endif
           @endforeach
         </div>
       </div>

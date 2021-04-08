@@ -36,11 +36,11 @@
           <table border="1">
             <tr align="left">
               <th class="detail detail_category">出品者</th>
-              <th class="detail">DBの設計忘れてました！！！</th>
+              <th class="detail">{{ $product->profile->nickname }}</th>
             </tr>
             <tr align="left">
               <th class="detail detail_category">カテゴリー</th>
-              <th class="detail">{{ $product->category_id }}</th>
+              <th class="detail">{{ $product->category->name }}</th>
             </tr>
             <tr align="left">
               <th class="detail detail_category">サイズ</th>
@@ -63,18 +63,22 @@
           <a href="#">購入に進む</a>
         </div>
       </div>
+      @foreach ($comments as $comment)
+      @if($comment->product_id==$product->id)
       <div class="product_comment">
         <div class="comment_img">
           <img src="{{ asset('assets/img/example.jpg') }}" alt="icon">
         </div>
         <div class="comment_main">
-          <div class="comment_name">Daisuke</div>
+          <div class="comment_name">{{ $comment->profile->nickname }}</div>
           <div class="comment_contents">
-            <div class="comment_text">商品の値下げをお願いします。</div>
-            <div class="comment_date">2021/3/15</div>
+            <div class="comment_text">{{ $comment->comment }}</div>
+            <div class="comment_date">{{ $comment->updated_at }}</div>
           </div>
         </div>
       </div>
+      @endif
+      @endforeach
     </div>
   </main>
   <footer>

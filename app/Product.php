@@ -15,4 +15,16 @@ class Product extends Model
     {
         return $this->belongsTo('App\Category');
     }
+
+    public function profile()
+    {
+        return $this->belongsTo('App\Profile');
+    }
+
+    // 商品（１）：コメント（多）
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+
 }
